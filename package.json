@@ -1,0 +1,25 @@
+{
+  "name": "Advert",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js",
+    "restart": "pm2 restart server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harshit151001/Advert.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/harshit151001/Advert/issues"
+  },
+  "homepage": "https://github.com/harshit151001/Advert#readme",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "express": "^4.17.1"
+  }
+}
