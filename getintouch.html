@@ -1,0 +1,1349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      A simple way to care for your elders when you are away | khyaal
+    </title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script async src="https://www.google.com/recaptcha/api.js"></script>
+    <link rel="icon" href="favicon.png" />
+    <style type="text/css">
+      #navbar {
+        overflow: hidden;
+      }
+      ::-webkit-input-placeholder {
+        color: #6f3f31;
+        opacity: 0.7;
+        padding-left: 1px;
+      }
+      .hncd {
+        margin-top: 90px;
+      }
+      .btmcs {
+        width: 15%;
+        position: absolute;
+        bottom: 11px;
+      }
+
+      .hiw {
+        margin: 30px 0;
+        text-align: center;
+        font-size: 37px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .hedcs3 {
+        font-size: 37px;
+        font-weight: 700;
+        text-transform: capitalize;
+        margin-top: 30px;
+      }
+      .hedcs2 {
+        text-align: center;
+        font-size: 37px;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .hedcs {
+        color: #fff;
+        font-size: 37px;
+        font-weight: 300;
+        margin: 81px 0 24px 0;
+      }
+      .circle1 {
+        background: #555;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: scale-down;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+        border-radius: 73%;
+        margin-bottom: 20px;
+      }
+      .circle {
+        height: 120px;
+        width: 90px;
+        border-radius: 50%;
+        object-fit: scale-down;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        position: relative;
+        border-radius: 73%;
+        margin-bottom: 10px;
+      }
+      .cin {
+        font-size: 32px;
+        color: #fff6ee;
+        text-align: center;
+      }
+      .imgcs {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 500px;
+      }
+      .bgdiv1 {
+        margin: 0 0 0 25px;
+      }
+      .bgdiv {
+        /*border: 2px solid #6f3f31;
+   border-radius: 5px;
+*/
+        width: 31%;
+        height: 280px;
+      }
+      .stepcs {
+        color: #6f3f31;
+        text-align: center;
+        /*padding: 0px 0 10px 0;*/
+        font-size: 21px;
+        font-weight: 500;
+        border-radius: 6px;
+      }
+      /*.bgdiv:hover{
+  background: #fff6ee;
+}*/
+      .md3cs {
+        color: #fff;
+        background: #3c2316;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 6px;
+      }
+      .pcs {
+        color: #6f3f31;
+        text-align: center;
+      }
+      .md3cs {
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 16px;
+        font-weight: 700;
+        border-radius: 6px;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      button:focus {
+        outline: none;
+      }
+      a:hover {
+        text-decoration: none;
+      }
+      a:focus {
+        outline: none;
+      }
+
+      .btncs {
+        background: #6f3f31;
+        border-color: #6f3f31;
+        font-size: 18px;
+        color: #fff6ee;
+        padding: 10px 28px;
+        border-radius: 5px;
+        border: none;
+      }
+      .btncs:hover {
+        text-decoration: none;
+      }
+      label {
+        display: block;
+        font-size: 17px;
+        font-weight: 400;
+        color: #fff6ee;
+      }
+      input:-internal-autofill-selected {
+        background-color: transparent !important;
+        color: #fff6ee !important;
+      }
+      input {
+        box-shadow: inset 0px 2px 3px #dddddd;
+        -webkit-box-shadow: inset 0px 2px 3px #dddddd;
+        padding-left: 10px;
+        color: #6f3f31;
+        margin-bottom: 23px;
+        width: 95%;
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 40px;
+        display: block;
+        /* border-left: none; */
+        /* border-right: none; */
+        /* border-top: none; */
+        /*background: transparent;*/
+        border: 1px solid #fff6ee;
+      }
+      input:focus {
+        outline: none;
+      }
+      .asscs {
+        width: 18%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 21px;
+      }
+      .bgcs {
+        background: #4c2b1a;
+        padding: 20px;
+        border-radius: 6px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        top: 340px;
+        right: 152px;
+        height: 570px;
+      }
+      .g-recaptcha {
+        margin: 0 0 0 11px;
+      }
+      .btn-primary {
+        background: #8bc23f;
+        border-color: #8bc23f;
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        height: 40px;
+        font-size: 18px;
+        margin-top: 16px;
+      }
+      .btn-primary:hover {
+        background: #8bc53f;
+        border-color: #8bc53f;
+      }
+      .vc_row {
+        padding: 70px 0;
+      }
+
+      body {
+        font-family: "Roboto";
+        color: #4c2b1a;
+        font-size: 16px;
+        line-height: 25px;
+      }
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        padding: 14px 16px 14px 0;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .logocs {
+        width: 12%;
+        margin: 0 38px 0 -8px;
+      }
+      #navbar a.active {
+        background-color: #4caf50;
+        color: white;
+      }
+      .cin1 {
+        margin-top: 14px;
+        font-size: 27px;
+        color: #fff6ee;
+        text-align: center;
+      }
+
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      .sticky + .content {
+        padding-top: 60px;
+      }
+
+      /*testimonials*/
+      #quote-carousel {
+        padding: 0 10px 30px 10px;
+        margin-top: 60px;
+      }
+      #quote-carousel .carousel-control {
+        background: none;
+        color: #cacaca;
+        font-size: 2.3em;
+        text-shadow: none;
+        margin-top: 30px;
+      }
+      #quote-carousel .carousel-indicators {
+        position: relative;
+        right: 50%;
+        top: auto;
+        bottom: 0px;
+        margin-top: 20px;
+        margin-right: -19px;
+      }
+      #quote-carousel .carousel-indicators li {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        overflow: hidden;
+        transition: all 0.4s ease-in;
+        vertical-align: middle;
+      }
+      #quote-carousel .carousel-indicators .active {
+        width: 128px;
+        height: 128px;
+        opacity: 1;
+        transition: all 0.2s;
+      }
+      .item blockquote {
+        border-left: none;
+        margin: 0;
+      }
+      /*.item blockquote p:before {
+    content: "f10d";
+    font-family: 'Roboto';
+    float: left;
+    margin-right: 10px;
+}*/
+      .testip {
+        font-size: 16px;
+      }
+      blockquote .small,
+      blockquote footer,
+      blockquote small {
+        color: #4c2b1a;
+        font-weight: 500;
+        font-size: 15px;
+      }
+
+      .timeline {
+        position: relative;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 15px 0;
+      }
+
+      .timeline::after {
+        content: "";
+        position: absolute;
+        width: 2px;
+        background: #4c2b1a;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -1px;
+      }
+
+      .container11 {
+        padding: 58px 30px;
+        position: relative;
+        background: inherit;
+        width: 50%;
+      }
+
+      .container11.left {
+        left: 0;
+      }
+
+      .container11.right {
+        left: 50%;
+      }
+
+      .container11::after {
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        top: calc(50% - 8px);
+        right: -8px;
+        background: #ffffff;
+        border: 2px solid #4c2b1a;
+        border-radius: 16px;
+        z-index: 1;
+      }
+
+      .container11.right::after {
+        left: -8px;
+      }
+
+      .container11::before {
+        content: "";
+        position: absolute;
+        width: 107px;
+        height: 2px;
+        top: calc(50% - 1px);
+        right: 8px;
+        background: #4c2b1a;
+        z-index: 1;
+      }
+
+      .container11.right::before {
+        left: 8px;
+      }
+      .strn {
+        font-size: 42px;
+      }
+      .container11 .date {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 0);
+        font-size: 18px;
+        font-weight: bold;
+        color: #4c2b1a;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        z-index: 1;
+      }
+
+      .container11 .date1 {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 2px);
+        /* text-align: center; */
+        font-size: 16px;
+        /* font-weight: bold; */
+        color: #4c2b1a;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 1px; */
+        /* z-index: 1;*/
+      }
+      .container11 .date2 {
+        position: absolute;
+        display: inline-block;
+        top: calc(50% - 2px);
+        /* text-align: center; */
+        font-size: 16px;
+        /* font-weight: bold; */
+        color: #4c2b1a;
+        /* text-transform: uppercase; */
+        /* letter-spacing: 1px; */
+        /* z-index: 1;*/
+      }
+      .inst {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 1px;
+        margin-top: 11px;
+      }
+      .inp {
+        margin-bottom: 30px;
+      }
+      .container11.left .date1 {
+        right: -435px;
+        width: 69%;
+      }
+
+      .container11.left .date {
+        right: -117px;
+      }
+
+      .container11.right .date {
+        left: -117px;
+      }
+
+      .container11.right .date2 {
+        left: -450px;
+        width: 72%;
+      }
+
+      .container11 .icon {
+        position: absolute;
+        display: inline-block;
+        padding: 9px 0;
+        top: calc(50% - 119px);
+        /*  background: #89b785;*/
+
+        border-radius: 40px;
+        text-align: center;
+        font-size: 18px;
+
+        z-index: 1;
+      }
+
+      .container11.left .icon {
+        right: 144px;
+      }
+
+      .container11.right .icon {
+        left: 144px;
+      }
+
+      .container11 .content {
+        padding: 30px 150px 30px 0;
+        /*  background: #89b785;*/
+        position: relative;
+        border-radius: 0 500px 500px 0;
+      }
+      .dt1 {
+        right: -106px !important;
+      }
+      .container11.right .content {
+        padding: 30px 0 30px 150px;
+        border-radius: 500px 0 0 500px;
+      }
+
+      .container11 .content h2 {
+        margin: 0 0 10px 0;
+        font-size: 18px;
+        font-weight: normal;
+        color: #006e51;
+      }
+
+      .container11 .content p {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c2b1a;
+        text-align: end;
+      }
+
+      .container11 .content .colrcs1 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c2b1a;
+        text-align: left;
+      }
+
+      .container11 .content .colrcs2 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        color: #4c2b1a;
+        text-align: end;
+      }
+
+      @media (max-width: 767.98px) {
+        .timeline::after {
+          left: 90px;
+        }
+
+        .container11 {
+          width: 100%;
+          padding-left: 120px;
+          padding-right: 30px;
+        }
+
+        .container11.right {
+          left: 0%;
+        }
+
+        .container11.left::after,
+        .container11.right::after {
+          left: 82px;
+        }
+
+        .container11.left::before,
+        .container11.right::before {
+          left: 100px;
+          border-color: transparent #006e51 transparent transparent;
+        }
+
+        .container11.left .date,
+        .container11.right .date {
+          right: auto;
+          left: 15px;
+        }
+
+        .container11.left .icon,
+        .container11.right .icon {
+          right: auto;
+          left: 146px;
+        }
+
+        .container11.left .content,
+        .container11.right .content {
+          padding: 30px 30px 30px 90px;
+          border-radius: 500px 0 0 500px;
+        }
+      }
+
+      .ftcs {
+        width: 40%;
+      }
+      .ftpcs {
+        font-size: 14px;
+        color: #fff;
+        font-weight: 100;
+        text-align: end;
+        padding-top: 49px;
+      }
+      .inmob {
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 767px) {
+        .inmob,
+        * [aria-labelledby="hide-on-desktop"] {
+          display: block !important;
+        }
+        .noinmob {
+          display: none !important;
+        }
+      }
+
+      @media only screen and (max-device-width: 480px) and (min-device-width: 320px) {
+        .logocs {
+          width: 38%;
+          margin: 0 38px 0 8px;
+        }
+        input {
+          margin-left: 11px;
+        }
+        .btn-primary {
+          margin-left: 11px;
+        }
+        .bgcs {
+          right: 0;
+          top: 389px;
+          width: 100%;
+        }
+        iframe {
+          margin: 0 0 0 -1px;
+        }
+        .ftpcs {
+          padding-left: 13px;
+        }
+        .bancs {
+          height: 480px;
+        }
+        .hedcs3 {
+          margin-top: 460px;
+          font-size: 22px;
+          text-align: center;
+        }
+        .hedcs2 {
+          font-size: 22px;
+        }
+        .hiw {
+          font-size: 22px;
+        }
+        .mbc {
+          text-align: center;
+        }
+        .hedcs {
+          margin: 22px 0 24px 0;
+          font-size: 20px;
+        }
+        .strn {
+          font-size: 30px;
+        }
+        .vc_row {
+          padding: 50px 0;
+        }
+        .hncd {
+          margin-top: 0;
+        }
+        .pt-20 {
+          padding-top: 20px;
+        }
+        .pb-20 {
+          padding-bottom: 20px;
+        }
+        .asscs {
+          margin-top: 50px;
+        }
+        #quote-carousel .carousel-indicators .active {
+          width: 50px;
+          height: 50px;
+        }
+        .fa-chevron-right:before {
+          display: none;
+        }
+        .fa-chevron-left:before {
+          display: none;
+        }
+        .ftpcs {
+          padding-top: 0;
+          text-align: left;
+        }
+      }
+
+      @media only screen and (max-device-width: 892px) and (min-device-width: 412px) {
+        .logocs {
+          width: 38%;
+          margin: 0 0 0 -5px;
+        }
+        .ftcs {
+          width: 30%;
+        }
+        input {
+          margin-left: 13px;
+        }
+        .bancs {
+          height: auto;
+        }
+        .btn-primary {
+          margin-left: 13px;
+        }
+        iframe {
+          margin: 0 0 0 0;
+        }
+        .bgcs {
+          right: 30px;
+          top: 433px;
+          width: auto;
+        }
+        .ftpcs {
+          padding-left: 15px;
+        }
+        .hedcs3 {
+          margin-top: 425px;
+          font-size: 28px;
+          text-align: center;
+        }
+        #quote-carousel {
+          margin-top: 20px;
+        }
+        .hedcs2 {
+          font-size: 28px;
+        }
+        .hiw {
+          font-size: 28px;
+        }
+        .mbc {
+          text-align: center;
+        }
+        .hedcs {
+          margin: 22px 0 24px 0;
+          font-size: 25px;
+        }
+        .strn {
+          font-size: 32px;
+        }
+        .vc_row {
+          padding: 50px 0;
+        }
+        .inst {
+          font-size: 20px;
+        }
+        .hncd {
+          margin-top: 0;
+        }
+        .pt-20 {
+          padding-top: 20px;
+        }
+        .pb-20 {
+          padding-bottom: 20px;
+        }
+        .asscs {
+          margin-top: 50px;
+        }
+        #quote-carousel .carousel-indicators .active {
+          width: 80px;
+          height: 80px;
+        }
+        .fa-chevron-right:before {
+          display: none;
+        }
+        .fa-chevron-left:before {
+          display: none;
+        }
+        .ftpcs {
+          padding-top: 0;
+          text-align: left;
+        }
+      }
+
+      @media only screen and (max-device-width: 767px) and (min-device-width: 481px) {
+        .bgcs {
+          right: 59px;
+          top: 448px;
+        }
+      }
+
+      @media only screen and (max-device-width: 1024px) and (min-device-width: 768px) {
+        .bgcs {
+          right: 77px;
+          width: 39%;
+          height: 580px;
+        }
+        .g-recaptcha {
+          margin: 0 0 0 27px !important;
+        }
+        .container11.left .date1 {
+          right: -363px;
+        }
+        .container11.right .date2 {
+          left: -379px;
+        }
+        input {
+          width: 86%;
+        }
+        .btn-primary {
+          width: 86%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start of LiveChat (www.livechatinc.com) code -->
+    <script>
+      window.__lc = window.__lc || {};
+      window.__lc.license = 12036405;
+      (function (n, t, c) {
+        function i(n) {
+          return e._h ? e._h.apply(null, n) : e._q.push(n);
+        }
+        var e = {
+          _q: [],
+          _h: null,
+          _v: "2.0",
+          on: function () {
+            i(["on", c.call(arguments)]);
+          },
+          once: function () {
+            i(["once", c.call(arguments)]);
+          },
+          off: function () {
+            i(["off", c.call(arguments)]);
+          },
+          get: function () {
+            if (!e._h)
+              throw new Error(
+                "[LiveChatWidget] You can't use getters before load."
+              );
+            return i(["get", c.call(arguments)]);
+          },
+          call: function () {
+            i(["call", c.call(arguments)]);
+          },
+          init: function () {
+            var n = t.createElement("script");
+            (n.async = !0),
+              (n.type = "text/javascript"),
+              (n.src = "https://cdn.livechatinc.com/tracking.js"),
+              t.head.appendChild(n);
+          },
+        };
+        !n.__lc.asyncInit && e.init(),
+          (n.LiveChatWidget = n.LiveChatWidget || e);
+      })(window, document, [].slice);
+    </script>
+    <noscript
+      ><a href="https://www.livechatinc.com/chat-with/12036405/" rel="nofollow"
+        >Chat with us</a
+      >, powered by
+      <a
+        href="https://www.livechatinc.com/?welcome"
+        rel="noopener nofollow"
+        target="_blank"
+        >LiveChat</a
+      ></noscript
+    >
+    <!-- End of LiveChat code -->
+    <!-- 
+
+  <div id="navbar">
+    <div class="container">
+   <a href="https://khyaal.com/"> <img class="logocs" src="khyaal_logo.png"> </a>
+   
+  </div>
+</div> -->
+    <section
+      class="noinmob"
+      style="
+        background-image: url(khyaal-img.jpeg); /*background: #fafafa;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <img class="logocs" src="khyaal-logo.png" />
+        <div class="row">
+          <div class="col-md-5" style="height: 400px">
+            <h3 class="hedcs">
+              Get the best
+              <strong class="strn" style="font-weight: 400">care</strong> for
+              your
+              <strong class="strn" style="font-weight: 400">elderly</strong>
+              loved one
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="inmob bancs"
+      style="
+        background-image: url(khyaal-mob.jpeg); /*background: #fafafa;*/
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="container">
+        <img class="logocs" src="khyaal-logo.png" />
+        <div class="row">
+          <div class="col-md-5" style="height: 400px">
+            <h3 class="hedcs">
+              Get the best
+              <strong class="strn" style="font-weight: 400">care</strong> for
+              your
+              <strong class="strn" style="font-weight: 400">elderly</strong>
+              loved one
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="vc_row">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h4 class="hedcs3 hedcs1">
+              India’s Most Comprehensive Elderly Care Service!
+            </h4>
+            <p class="mbc">
+              Khyaal is an elderly care service that is focused towards making
+              the lives of the elderly more comfortable by assisting in meeting
+              their various needs like paying bills, buying grocery, providing
+              emotional support, ensuring timely medication, booking
+              appointments among many others.
+            </p>
+          </div>
+          <div class="col-md-1"></div>
+          <div class="col-md-3 bgcs">
+            <form id="registrationform">
+              <!-- <h3 class="cin">Here's 25% off</h3> -->
+              <p class="cin1">Request a Call</p>
+              <br />
+              <fieldset>
+                <!-- Section 1 -->
+
+                <!-- <label class="" for="name">Name:</label> -->
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Name"
+                  value=""
+                  id="name"
+                  required
+                />
+
+                <!--  <label class="" for="email">Email:</label> -->
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  value=""
+                  id="email"
+                  required
+                />
+
+                <!-- <label class="" for="name">Phone:</label> -->
+                <input
+                  type="tel"
+                  name="phone"
+                  value=""
+                  placeholder="Phone number"
+                  id="phone"
+                  required
+                />
+
+                <!-- <label class="" for="name">Time Zone:</label> -->
+                <input
+                  type="text"
+                  name="zone"
+                  value=""
+                  placeholder="Time Zone"
+                  id="zone"
+                  required
+                />
+
+                <!-- <label class="" for="name">Current City:</label> -->
+                <input
+                  type="text"
+                  name="time"
+                  value=""
+                  placeholder="Preferred time to call"
+                  id="time"
+                  required
+                />
+
+                <div
+                  class="g-recaptcha"
+                  data-sitekey="6LclR7sZAAAAAGShJklaTEbEqrJXpTw6jzIpo2XU"
+                ></div>
+
+                <!-- <label class="" for="name">Pincode:</label> -->
+                <!--  <input type="number" name="pincode" value="" placeholder="Pincode" id="pincode" required /> -->
+
+                <button id="submit" type="submit" class="btn btn-primary">
+                  Schedule Now
+                </button>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="">
+      <!-- <img src="circle.png" style="position: absolute; right: -89px;"> -->
+      <div class="container">
+        <div class="vc_row pt-20 pb-20">
+          <h4 class="hiw">How it works</h4>
+          <br />
+
+          <div class="inmob" style="text-align: center">
+            <img class="icon" src="step-1.png" />
+            <p class="inst">Step 1</p>
+            <p class="inp">
+              A Khyaal sales representative will call you and introduce the
+              services of Khyaal.
+            </p>
+
+            <img class="icon" src="step-2.png" />
+            <p class="inst">Step 2</p>
+            <p class="inp">
+              Once you have expressed your interest in Khyaal, a call will be
+              scheduled with our sales representative and a Khyaal Caregiver to
+              understand your requirement.
+            </p>
+
+            <img class="icon" src="step-3.png" />
+            <p class="inst">Step 3</p>
+            <p class="inp">
+              We will setup a call between your elderly loved one and the
+              assigned Khyaal Caregiver to understand from them about their
+              specific needs.
+            </p>
+
+            <img class="icon" src="step-4.png" />
+            <p class="inst">Step 4</p>
+            <p class="inp">
+              The assigned caregiver will begin interacting with your elderly
+              loved one over WhatsApp and will also share a dedicated phone
+              number with the elderly to place their requests.
+            </p>
+
+            <img class="icon" src="step-5.png" />
+            <p class="inst">Step 5</p>
+            <p class="inp">
+              We will regularly monitor various aspects of your elderly loved
+              one and share a report with you on a weekly basis.
+            </p>
+          </div>
+
+          <div class="timeline noinmob">
+            <div class="container11 left">
+              <div class="date dt1">Step 1</div>
+              <p class="colrcs1 date1">
+                A Khyaal sales representative will call you and introduce the
+                services of Khyaal.
+              </p>
+              <img class="icon" src="step-1.png" />
+              <div class="content">
+                <!-- <h2>Lorem ipsum dolor sit amet</h2> -->
+              </div>
+            </div>
+            <br />
+            <div class="container11 right">
+              <div class="date">Step 2</div>
+              <img class="icon" src="step-2.png" />
+              <div class="content">
+                <p class="colrcs2 date2">
+                  Once you have expressed your interest in Khyaal, a call will
+                  be scheduled with our sales representative and a Khyaal
+                  Caregiver to understand your requirement.
+                </p>
+              </div>
+            </div>
+            <br /><br />
+            <div class="container11 left">
+              <div class="date">Step 3</div>
+              <img class="icon" src="step-3.png" />
+              <div class="content">
+                <p class="colrcs1 date1">
+                  We will setup a call between your elderly loved one and the
+                  assigned Khyaal Caregiver to understand from them about their
+                  specific needs.
+                </p>
+              </div>
+            </div>
+            <br /><br />
+            <div class="container11 right">
+              <div class="date">Step 4</div>
+              <img class="icon" src="step-4.png" />
+              <div class="content">
+                <p class="colrcs2 date2">
+                  The assigned caregiver will begin interacting with your
+                  elderly loved one over WhatsApp and will also share a
+                  dedicated phone number with the elderly to place their
+                  requests.
+                </p>
+              </div>
+            </div>
+            <br /><br /><br />
+            <div class="container11 left">
+              <div class="date">Step 5</div>
+              <img class="icon" src="step-5.png" />
+              <div class="content">
+                <p class="colrcs1 date1">
+                  We will regularly monitor various aspects of your elderly
+                  loved one and share a report with you on a weekly basis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--  <img src="circle.png" style="position: absolute; left: -89px;"> -->
+    </section>
+
+    <section class="">
+      <div class="container">
+        <div class="vc_row pt-20 pb-20">
+          <h4 class="hedcs2">Being a part of the Khyaal family ensures</h4>
+          <div class="row hncd">
+            <div class="col-md-4">
+              <img src="assistance.png" class="asscs" />
+              <p class="stepcs">Prompt Assistance</p>
+            </div>
+            <div class="col-md-4">
+              <img src="care.png" class="asscs" />
+              <p class="stepcs">Holistic Care Offering</p>
+            </div>
+            <div class="col-md-4">
+              <img src="dedicated.png" class="asscs" />
+              <p class="stepcs">Dedicated Caregivers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img src="circle.png" style="position: absolute; right: -89px;"> -->
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="vc_row pt-20 pb-20">
+          <h4 class="hedcs2">What our members say</h4>
+          <div class="row">
+            <div class="col-md-12">
+              <div
+                class="carousel slide"
+                data-ride="carousel"
+                id="quote-carousel"
+              >
+                <!-- Carousel Slides / Quotes -->
+                <div class="carousel-inner text-center">
+                  <!-- Quote 1 -->
+                  <div class="item active">
+                    <blockquote>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <p class="testip">
+                            “The experience with Khyaal has been good. The fact
+                            that you are taking alot of interest in the welfare
+                            of senior citizens is really good.
+                            Medicationreminders which you send is very helpful
+                            as I used to forget taking mymedicines. Khyaal in
+                            itself is a really good concept & keep up the good
+                            work.”
+                          </p>
+                          <small> Mrs. Jennifer Dave </small>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <!-- Quote 2 -->
+                  <div class="item">
+                    <blockquote>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <p class="testip">
+                            “We are happy to associate ourselves with Khyaal.
+                            Although it is a virtualservice & have not met
+                            caregivers in person, I feel you are just like a
+                            part ofmy family. In this hustle & bustle of life,
+                            there are organizations like Khyaalwho take care of
+                            people like us. It is a really good feeling. The way
+                            you guidedme with the nutrition, physical activities
+                            and the medicine reminders is reallycommendable.”
+                          </p>
+                          <small> Mr. Vimalchandji Rathod </small>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                  <!-- Quote 3 -->
+                  <div class="item">
+                    <blockquote>
+                      <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                          <p class="testip">
+                            “Khyaal as an organization is very useful to the
+                            elders who are above 70 years.They are very
+                            dependable when it comes to sending medicine
+                            reminders aswell as keeping a track of the
+                            medication and for doctor consultations. I amvery
+                            happy to receive these messages on a daily basis and
+                            this will be veryhelpful for all the elders like
+                            me.”
+                          </p>
+                          <small> Mr. Prabhakara Rao Arisetty </small>
+                        </div>
+                      </div>
+                    </blockquote>
+                  </div>
+                </div>
+                <!-- Bottom Carousel Indicators -->
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#quote-carousel"
+                    data-slide-to="0"
+                    class="active"
+                  >
+                    <img class="img-responsive" src="dave.png" />
+                  </li>
+                  <li data-target="#quote-carousel" data-slide-to="1">
+                    <img class="img-responsive" src="rathod.png" />
+                  </li>
+                  <li data-target="#quote-carousel" data-slide-to="2">
+                    <img class="img-responsive" src="arisetty.png" />
+                  </li>
+                </ol>
+
+                <!-- Carousel Buttons Next/Prev -->
+                <a
+                  data-slide="prev"
+                  href="#quote-carousel"
+                  class="left carousel-control"
+                  ><i class="fa fa-chevron-left"> </i>
+                </a>
+                <a
+                  data-slide="next"
+                  href="#quote-carousel"
+                  class="right carousel-control"
+                  ><i class="fa fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section style="background: #4c2b1a">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <img src="khyaal-logo.png" class="ftcs" />
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <p class="ftpcs">© 2021 Taisho Ventures Pvt. Ltd.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-analytics.js"></script>
+    <script type="text/javascript">
+      const form = document.getElementById("registrationform");
+      const submitBtn = document.getElementById("submit");
+
+      let userName = document.getElementById("name");
+      let userEmail = document.getElementById("email");
+      let userPhone = document.getElementById("phone");
+      let userZone = document.getElementById("zone");
+      let userTime = document.getElementById("time");
+
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        let userNameInput = userName.value;
+        let userEmailInput = userEmail.value;
+        let userPhoneInput = userPhone.value;
+        let userZoneInput = userZone.value;
+        let userTimeInput = userTime.value;
+
+        if (userNameInput.length < 5) {
+          return;
+        }
+
+        const response = fetch(
+          "https://test-afbfa-default-rtdb.firebaseio.com/user.json",
+          {
+            method: "POST",
+            body: JSON.stringify({
+              userNameInput,
+              userEmailInput,
+              userPhoneInput,
+              userZoneInput,
+              userTimeInput,
+            }),
+          }
+        )
+          .then(function () {
+            console.log("Data saved.");
+            submitBtn.textContent = "Submitted Successfully";
+            submitBtn.disabled = true;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      });
+    </script>
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+        showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = slides.length;
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+      }
+    </script>
+  </body>
+</html>
