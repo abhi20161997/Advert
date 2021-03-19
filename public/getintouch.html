@@ -978,7 +978,7 @@
 
                 <!-- <label class="" for="name">Current City:</label> -->
                 <input
-                  type="datetime-local"
+                  type="text"
                   name="time"
                   value=""
                   placeholder="Preferred time to call"
@@ -1317,6 +1317,12 @@
             console.log(error);
           });
       });
+
+      const date = document.getElementById("time");
+      date.onfocus = function (event) {
+        this.type = "datetime-local";
+        this.focus();
+      };
     </script>
     <script>
       var slideIndex = 1;
